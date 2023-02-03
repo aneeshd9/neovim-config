@@ -89,6 +89,9 @@ return require('packer').startup({function(use)
   -- Vim Tmux navigator
   use 'christoomey/vim-tmux-navigator'
 
+  -- Floating termnals
+  use {"akinsho/toggleterm.nvim", tag = '*' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
