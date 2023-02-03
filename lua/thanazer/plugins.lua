@@ -92,6 +92,20 @@ return require('packer').startup({function(use)
   -- Floating termnals
   use {"akinsho/toggleterm.nvim", tag = '*' }
 
+  -- Dashboard using alpha
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  }
+
+  -- Lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
