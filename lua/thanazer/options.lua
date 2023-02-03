@@ -41,7 +41,7 @@ local options = {
   scrolloff = 0,
 
   sidescrolloff = 8,
-  guifont = "monospace:h17", -- the font used in graphical neovim applications
+  guifont = {"Mononoki Nerd Font", "h14"}, -- the font used in graphical neovim applications
   title = true,
   -- colorcolumn = "80",
   -- colorcolumn = "120",
