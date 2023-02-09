@@ -6,7 +6,8 @@ lsp.ensure_installed({
   'tsserver',
   'eslint',
   'sumneko_lua',
-  'clangd'
+  'clangd',
+  'jdtls'
 })
 
 local cmp = require('cmp')
